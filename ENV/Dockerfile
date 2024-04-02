@@ -1,4 +1,6 @@
 FROM almalinux:8
+ENV MY_NAME="gopi"\
+    MY_WORK="DevOps"\
+    MY_PASSION="DevOps"
 RUN yum install nginx -y
-EXPOSE 80/tcp
 CMD ["nginx","-g","daemon off;"]
