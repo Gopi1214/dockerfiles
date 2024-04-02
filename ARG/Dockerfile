@@ -1,5 +1,5 @@
 FROM almalinux:8
 ARG username
 RUN useradd ${username}
-#USER {username}
+ENV username=${username}
 CMD ["sleep", "100"]
